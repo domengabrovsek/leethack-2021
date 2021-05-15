@@ -5,13 +5,14 @@ const input = "grubnehtog, elppaenip, amsiv, elppaenip, grubnehtog, evlove, neet
 
 const words = input.split(',')
   .map(word => word.trim())
-  .map(word => word.split('').reverse().join(''))
+  .map(word => word.split('').reverse().join('')).sort()
 
 
 const uniques = Array.from(new Set(words))
 
-
+const result = uniques[2];
 
 
 console.log(uniques)
+console.log(result)
 
